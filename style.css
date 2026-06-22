@@ -1,0 +1,14 @@
+body {
+    margin:5px;
+    color:white;
+    font-family: 'Courier New';
+    background: linear-gradient(to left, #0059fffb,#0099fffb);
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
