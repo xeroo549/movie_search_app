@@ -19,6 +19,7 @@ input {
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-self: center;
 }
 
 button {
@@ -62,4 +63,8 @@ button:hover {
 option {
     background: #0a9dffbd;
     font-weight: bold;
+}
+
+.nav-btn {
+    margin-top:35px;
 }
