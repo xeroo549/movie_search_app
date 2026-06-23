@@ -1,5 +1,5 @@
 body {
-    margin:5px;
+    margin:10px;
     color:white;
     font-family: 'Courier New';
     background: linear-gradient(to left, #0059fffb,#0099fffb);
@@ -10,5 +10,56 @@ input {
     border: none;
     padding:10px;
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    width: 75%;
+    font-weight: bold;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background: #0a9dffbd;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: 0.2s ease;
+    box-shadow: 5px 5px 5px rgb(32, 32, 32);
+    margin: 5px;
+}
+#favourite-btn {
+    color: #ff5353;
+}
+
+button:hover {
+    background: #148aff;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+#release-year-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin:5px;
+    margin-right:10px;
+}
+
+#release-year-filter {
+    background: #0a9dffbd;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: 0.2s ease;
+    box-shadow: 5px 5px 5px rgb(32, 32, 32);
+    margin: 5px;
+}
+option {
+    background: #0a9dffbd;
+    font-weight: bold;
 }

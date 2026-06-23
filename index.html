@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Search</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
+    </link>
 </head>
+
 <body>
     <h1>Movie Search</h1>
-    <input type="search" placeholder="Напишіть назву фільма...">
+    <input type="search" placeholder="Напишіть назву фільма..." id="search-bar">
+    <nav>
+        <ul id="nav-list">
+            <li>
+                <p id="release-year-text">Рік випуску</p>
+                <select id="release-year-filter">
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+            </li>
+            <li><button id="favourite-btn">❤ Вподобане</button></li>
+            <li><button id="best-film-btn">Топ Фільмів</button></li>
+            <li><button id="best-serial-btn">Топ Серіалів</button></li>
+        </ul>
+    </nav>
+
+
 
     <script src="./script.js"></script>
 </body>
+
 </html>
