@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", (event) => {
-    const API_KEY = 'dae6032d'
+    const API_KEY = '4e438ee44d66ecfd973c3fae3c7ab457'
 
     let button = document.querySelector('#favourite-btn')
     let search_bar = document.querySelector('#search-bar')
@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", (event) => {
         const safeText = encodeURIComponent(text)
         const release_year = release_year_filter.value
 
-        const url = `http://www.omdbapi.com/?apikey=${API_KEY}&t=${safeText}&y=${release_year}`
+        const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${safeText}&primary_release_year=${release_year}`;
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
